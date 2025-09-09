@@ -1,0 +1,93 @@
+html {
+
+  font-family: "Poppins";
+}
+:root {
+  --bg-color: #080808;
+  --second-bg-color: #101010;
+  --text-color: white;
+  --main-color: #15bb68;
+}
+
+.img{
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 50%;
+    transition: 0.4s ease-in-out;
+}
+
+.img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+}
+
+.btn-group:hover{
+    box-shadow: 0 0 25px var(--main-color)
+                0 0 50px var(--main-color);
+}
+
+.read-btn{
+    box-shadow: 0 0 25px var(--main-color);
+}
+.projects{
+    background-color: var(--second-bg-color);
+}
+.projects-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    place-items: center;
+    gap: 3rem;
+    row-gap: 5rem;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align-last: center;
+    background-color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 3rem;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--main-color);
+    transition: 0.3s ease;
+    width: 20vw;
+}
+.cards:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    transform: scale(1.02);
+}
+.cards img{
+    max-width: 250px;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+.cards h3{
+    font-size: 1rem;
+    font-weight: bold;
+}
+button:hover{
+    box-shadow: 0 0 25px var(--main-color);
+    transform: scale(1.02);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+nav a{
+    border-bottom: 3px solid transparent;
+}
+nav a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+a.active{
+    border-bottom: 1px solid var(--main-color);
+}
